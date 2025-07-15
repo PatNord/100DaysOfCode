@@ -1,0 +1,22 @@
+Todays goal was to get familiar with different loops. For that course used reebogs world found here: 
+https://reeborg.ca/reeborg.html?lang=en&mode=python&menu=worlds%2Fmenus%2Freeborg_intro_en.json&name=Maze&url=worlds%2Ftutorial_en%2Fmaze1.json
+
+Final project was to make robot go trough the maze. This is my solution:
+
+def turn_right():           <------- first I made function to turn right, because game doesnt have that by default.
+    for i in range(3):
+        turn_left()
+
+while not at_goal():        <------- as long as we are not on the goal tile, code will run.
+    if front_is_clear():    
+        move()
+    elif wall_in_front() and wall_on_right:
+        turn_left()
+    while not wall_on_right():
+        if at_goal():
+            break
+        else:
+            turn_right()
+            move()
+        
+ 
