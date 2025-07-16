@@ -1,20 +1,10 @@
 import random
+import words
 
-words = [
-    "python",
-    "giraffe",
-    "hangman",
-    "mystery",
-    "keyboard",
-    "adventure",
-    "puzzle",
-    "banana",
-    "rocket",
-    "island"
-]
+
 
 lives = 6
-secret_word = list(random.choice(words))
+secret_word = list(random.choice(words.word_list))
 dashed_word = []
 guessed_letters = []
 
@@ -58,6 +48,7 @@ while lives > 0:
         print("You won!")
         break
     elif lives == 0:
+        print(f'secret word was: {"".join(secret_word)}')
         print("You lost!")
 
     
