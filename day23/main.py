@@ -57,6 +57,7 @@ while game_is_on:
         turtle.reset_position()
         Car.increase_difficulty()
         score.point()
+        car_spawn_rate -= 1
 
 
 

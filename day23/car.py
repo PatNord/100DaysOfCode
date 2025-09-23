@@ -12,7 +12,7 @@ class Car(Turtle):
         self.shape("square")
         self.shapesize(stretch_wid=1, stretch_len=2)
         self.color(random.randint(0, 255),random.randint(0, 255), random.randint(0, 255))
-        self.goto(400, random.randint(-350, 350))
+        self.goto(400, random.randint(-320, 350))
         self.showturtle()
     
     def move(self):
